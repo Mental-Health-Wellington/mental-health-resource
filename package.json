@@ -1,6 +1,7 @@
 {
   "name": "mental-health-resource",
   "version": "0.1.0",
+  "homepage": "https://mental-health-wellington.github.io/mental-health-resource/",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
