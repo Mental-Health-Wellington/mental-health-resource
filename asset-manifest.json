@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mental-health-resource/static/css/main.b0afd342.chunk.css",
-    "main.js": "/mental-health-resource/static/js/main.16343c74.chunk.js",
-    "main.js.map": "/mental-health-resource/static/js/main.16343c74.chunk.js.map",
+    "main.css": "/mental-health-resource/static/css/main.bbade079.chunk.css",
+    "main.js": "/mental-health-resource/static/js/main.a8c424ba.chunk.js",
+    "main.js.map": "/mental-health-resource/static/js/main.a8c424ba.chunk.js.map",
     "runtime~main.js": "/mental-health-resource/static/js/runtime~main.f5dcbd9c.js",
     "runtime~main.js.map": "/mental-health-resource/static/js/runtime~main.f5dcbd9c.js.map",
     "static/js/2.ac786bf4.chunk.js": "/mental-health-resource/static/js/2.ac786bf4.chunk.js",
     "static/js/2.ac786bf4.chunk.js.map": "/mental-health-resource/static/js/2.ac786bf4.chunk.js.map",
     "index.html": "/mental-health-resource/index.html",
-    "precache-manifest.68380e4431da958d7f4be91b0fce2765.js": "/mental-health-resource/precache-manifest.68380e4431da958d7f4be91b0fce2765.js",
+    "precache-manifest.28b81d2bcc55840638a7c9ad0be81a5c.js": "/mental-health-resource/precache-manifest.28b81d2bcc55840638a7c9ad0be81a5c.js",
     "service-worker.js": "/mental-health-resource/service-worker.js",
-    "static/css/main.b0afd342.chunk.css.map": "/mental-health-resource/static/css/main.b0afd342.chunk.css.map"
+    "static/css/main.bbade079.chunk.css.map": "/mental-health-resource/static/css/main.bbade079.chunk.css.map"
   }
 }
