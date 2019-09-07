@@ -9,7 +9,7 @@ export class PsychologicalDistressService {
 
   getSuicidesPer100000({ ethnicity, sex }) {
     const ethnicitySearch = ethnicity === "Māori" ? "Māori" : "Non-Māori"
-    return suicideRates.find((datum) => datum.ethnicity === ethnicitySearch && datum.sex === sex).deaths_per_100000
+    return suicideRates.find((datum) => datum.ethnicity === ethnicitySearch && datum.sex === sex).deaths_per_100000.toFixed(2)
   }
 
   getFaceToFaceVisitPercentage({ ethnicity, sex, age }) {

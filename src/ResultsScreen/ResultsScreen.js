@@ -19,10 +19,10 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         header="Information for myself"
         headerId="information-for-myself"
         >
-          <p>Congratulations, you are one of {faceToFaceVisitsPercentage}% people in your demographic who are seeking help.</p>
-          <p>If you are feel that you are in immediate danger to yourself or others, then <a href="https://www.mentalhealth.org.nz/get-help/in-crisis">find help right away by calling 111, going to your nearest hospital, or calling your local crisis line</a>.</p>
-          <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, </p>
-          <p><a href="https://1737.org.nz/">1737</a> is a free councelling service which you can call or text. It's available 24/7, so is a fantastic resource if you were looking to talk through a difficult situation sortly after it's happened.</p>
+        <p>Congratulations, you are one of {faceToFaceVisitsPercentage}% people in your demographic who are seeking help.</p>
+        <p>If you are feel that you are in immediate danger to yourself or others, then <a href="https://www.mentalhealth.org.nz/get-help/in-crisis">find help right away by calling 111, going to your nearest hospital, or calling your local crisis line</a>.</p>
+        <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, </p>
+        <p><a href="https://1737.org.nz/">1737</a> is a free councelling service which you can call or text. It's available 24/7, so is a fantastic resource if you were looking to talk through a difficult situation sortly after it's happened.</p>
       </InformationSection>
 
       <InformationSection
@@ -30,7 +30,8 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         headerId="information-to-help-a-loved-one"
         >
         <p>Helping those you love can be difficult, especially when you don't feel like you have the right tools to support them.</p>
-        <p>The good news is that you are able to direct them to the wealth of resources out there.</p>
+        <p>The good news is that you are able to direct them to the wealth of resources out there. Mental Health First Aid Australia has resources to prepare you for conversations about topics such as <a href="https://mhfa.com.au/mental-health-first-aid-guidelines"><strong>depression</strong>, <strong>drug abuse</strong>, and <strong>suicides</strong></a></p>
+        <p>There are also options to go to Mental Health First Aid training courses through organisations such as <a href="https://coliberate.co.nz/mhfa/">Coliberate</a>, and <a href="http://koawatea.co.nz/MHFA/">Ko Awatea</a></p>
       </InformationSection>
 
       <InformationSection
