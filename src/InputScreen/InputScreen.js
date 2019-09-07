@@ -5,7 +5,7 @@ export default function InputScreen({ question, values, onClick }) {
     <section>
       <h2>{question}</h2>
       {values.map((value) =>
-        <button onClick={() => onClick(value)}>{value}</button>
+        <button key={value} onClick={() => onClick(value)}>{value}</button>
       )}
     </section>
   )

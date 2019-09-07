@@ -3,6 +3,7 @@ import './App.scss';
 
 import { PsychologicalDistressService } from './Services/PsychologicalDistressService'
 import InputScreen from './InputScreen/InputScreen'
+import ResultsScreen from './ResultsScreen/ResultsScreen';
 
 const sexValues = [
   "male", "female"
@@ -54,7 +55,14 @@ function App() {
           />
       )
     } else {
-      return (<p>{sex} {age} {chanceOfDistress}</p>)
+      return (
+        <ResultsScreen
+          age={age}
+          sex={sex}
+          ethnicity={ethnicity}
+          chanceOfDistress={chanceOfDistress}
+        />
+      )
     }
   }
 
@@ -62,8 +70,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Mental Health Awareness Tool</h1>
-        {currentPage()}
       </header>
+      {currentPage()}
     </div>
   );
 }
