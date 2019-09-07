@@ -1,3 +1,11 @@
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
 .App-header {
   text-align: center;
   background-color: #282c34;
@@ -12,13 +20,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

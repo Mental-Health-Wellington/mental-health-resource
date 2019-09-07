@@ -4,6 +4,7 @@ import './App.scss';
 import { PsychologicalDistressService } from './Services/PsychologicalDistressService'
 import InputScreen from './InputScreen/InputScreen'
 import ResultsScreen from './ResultsScreen/ResultsScreen';
+import GetStarted from './GetStarted/GetStarted';
 
 const sexValues = [
   "male", "female"
@@ -23,6 +24,7 @@ function App() {
   const [ethnicity, setEthnicity] = useState(null)
   const [chanceOfDistress, setChanceOfDistress] = useState(null)
   const [chanceOfHazardousDrinking, setChanceOfHazardousDrinking] = useState(null)
+  const [getStarted, setGetStarted] = useState(false)
 
   useEffect(() => {
     if (!ethnicity || !sex) return
@@ -32,7 +34,14 @@ function App() {
   }, [ethnicity, sex])
 
   function currentPage() {
-    if (!sex) {
+    if (!getStarted) {
+      return (
+        <GetStarted 
+          onClick={() => setGetStarted(true)}
+        />
+      )
+    }
+    else if (!sex) {
       return (
         <InputScreen
           question="What is your sex?"
@@ -72,9 +81,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Mental Health Awareness Tool</h1>
+        <h1>Mental Health Journey</h1>
       </header>
-      {currentPage()}
+      <div className="body">
+        {currentPage()}
+      </div>
     </div>
   );
 }
