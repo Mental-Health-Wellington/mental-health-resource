@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f583fb4e9d67ca5fb79b4e9440a37392",
+    "revision": "2c4953231544df19d3bceeb257fb80d7",
     "url": "/mental-health-resource/index.html"
   },
   {
-    "revision": "015be5f915a6a3e4632e",
+    "revision": "8b1d7ceec6d81b61811c",
     "url": "/mental-health-resource/static/css/main.9e0a76e5.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mental-health-resource/static/js/2.1b94c57a.chunk.js"
   },
   {
-    "revision": "015be5f915a6a3e4632e",
-    "url": "/mental-health-resource/static/js/main.0ef814cd.chunk.js"
+    "revision": "8b1d7ceec6d81b61811c",
+    "url": "/mental-health-resource/static/js/main.3b2c966d.chunk.js"
   },
   {
     "revision": "c37c05ae3ad4744236fa",
