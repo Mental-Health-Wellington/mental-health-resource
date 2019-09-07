@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mental-health-resource/precache-manifest.4cb982af3aaace97524570f2501e9622.js"
+  "/mental-health-resource/precache-manifest.68380e4431da958d7f4be91b0fce2765.js"
 );
 
 self.addEventListener('message', (event) => {
