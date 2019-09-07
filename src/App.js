@@ -15,7 +15,7 @@ const ageValues = [
 ]
 
 const ethnicityValues = [
-  "Maori", "Pacific", "Asian", "European/Other"
+  "Māori", "Pacific", "Asian", "European/Other"
 ]
 
 function App() {

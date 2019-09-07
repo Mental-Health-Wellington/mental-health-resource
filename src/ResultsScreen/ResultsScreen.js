@@ -9,7 +9,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         <p>Did you know that {chanceOfDistress}% of people like you experience <a href="https://en.wikipedia.org/wiki/Mental_distress">Mental Distress</a>.</p>
         <p>{chanceOfHazardousDrinking}% are also battling with hazardous drinking.</p>
         <p>These are scary statistics, but you are taking the first important step to reducing their impact.</p>
-        <a href="#information-for-myself">Information to help myself</a>
+        <a className="button" href="#information-for-myself">Information to help myself</a>
         <a className="button" href="#information-to-help-a-loved-one">Information to help a loved one</a>
         <a className="button" href="#information-to-improve-the-system">Information on improving the mental health system</a>
       </InformationSection>

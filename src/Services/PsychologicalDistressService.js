@@ -66,7 +66,7 @@ const psychologicalData = [
    "estimated_people": 13000
  },
  {
-   "group": "Maori",
+   "group": "Māori",
    "total": 11.5,
    "male": 8.6,
    "female": 14.2,
@@ -213,7 +213,7 @@ const alcoholData = [
  },
  {
    "year": 2016,
-   "group": "Maori",
+   "group": "Māori",
    "total": 33,
    "male": 39,
    "female": 27.6,
@@ -282,5 +282,40 @@ const alcoholData = [
    "male": 31.4,
    "female": 15.5,
    "estimated_people": 166000
+ }
+]
+
+const suicideRates = [
+ {
+   "Year": 2015,
+   "Measure": "Age-standardised suicide rate",
+   "Sex": "Male",
+   "Age group": "Total",
+   "Ethnicity": "Māori",
+   "deaths_per_100000": 25.3
+ },
+ {
+   "Year": 2015,
+   "Measure": "Age-standardised suicide rate",
+   "Sex": "Female",
+   "Age group": "Total",
+   "Ethnicity": "Māori",
+   "deaths_per_100000": 11.5
+ },
+ {
+   "Year": 2015,
+   "Measure": "Age-standardised suicide rate",
+   "Sex": "Male",
+   "Age group": "Total",
+   "Ethnicity": "Non-Māori",
+   "deaths_per_100000": 14.7
+ },
+ {
+   "Year": 2015,
+   "Measure": "Age-standardised suicide rate",
+   "Sex": "Female",
+   "Age group": "Total",
+   "Ethnicity": "Non-Māori",
+   "deaths_per_100000": 4.7
  }
 ]
