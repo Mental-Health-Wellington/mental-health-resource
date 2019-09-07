@@ -17,11 +17,11 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
       
       <InformationSection>
-        <p>{chanceOfDistress}% experience <a href="https://en.wikipedia.org/wiki/Mental_distress">mental distress</a>.</p>
+        <p><strong>{chanceOfDistress}%</strong> experience <a href="https://en.wikipedia.org/wiki/Mental_distress">mental distress</a> every year. Any one of us can be affected: over 50–80% of New Zealanders will experience mental distress or addiction challenges or both in their lifetime</p>
       </InformationSection>
 
       <InformationSection>
-        <p>{chanceOfHazardousDrinking}% are battling with hazardous drinking.</p>
+        <p><strong>{chanceOfHazardousDrinking}%</strong> are battling with hazardous drinking, which many people have identified as a serious public health issue.</p>
       </InformationSection>
 
       <InformationSection>
@@ -30,13 +30,13 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
             <img key={i} height="28px" src={HeadacheImage} alt="person" />)}
         </div>
         <p>
-          For every 100,000 people like you, {suicides} will take their own life.
+          For every 100,000 people like you, <strong>{suicides}</strong> will take their own life each year.
         </p>
         <div style={{clear: 'both'}} />
       </InformationSection>
 
       <InformationSection>
-        <p>{faceToFaceVisitsPercentage}% have been seen face-to-face with a mental health professional.</p>
+        <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health professional (in 2016).</p>
       </InformationSection>
 
       <InformationSection>
@@ -72,7 +72,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
           <p>Becoming a member, and getting involved with organisations such as <a href="https://www.balance.org.nz/">Balance NZ</a> is a great place to start. They support the community by using the views of people with mental health and addiction issues, so that they can advocate for their civil rights in national forums.</p>
 
           <p>You can get an understanding of the system by reading the <a href="https://mentalhealth.inquiry.govt.nz/assets/Summary-reports/He-Ara-Oranga.pdf">He Ara Oranga - Mental Health &amp; Addictions Inquiry Report</a>.</p>
-          <p>As an example of how <a href="https://www.balance.org.nz/">Balance</a> supports their community, you can read <a href="https://www.balance.org.nz/images/Home-WBC/Report_-_Lived_experience_and_whanau_response_to_MHA_inquiry_17_Feb_2019.pdf">their report on areas they believe need more attention</a>.</p>
+          <p>As an example of how <a href="https://www.balance.org.nz/">Balance</a> supports their community, you can read <a href="https://www.balance.org.nz/images/Home-WBC/Report_-_Lived_experience_and_whanau_response_to_MHA_inquiry_17_Feb_2019.pdf">their report on areas they believe need more attention</a>. Some examples being "developing advocacy and better processes to ensure system accountability", and "ending forced treatment rather than just ‘minimising’ it".</p>
       </InformationSection>
     </section>
   )
