@@ -6,6 +6,22 @@ h2 {
   font-size: 3em;
 }
 
+button {
+  background-color: #F0F3F4;
+  color: #334856;
+  font-size: 1.5em;
+  padding: 0.5em;
+  border: 1px solid #334856;
+  border-radius: 50px;
+  margin-bottom: 0.75em;
+  cursor: pointer;
+  width: 250px;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .App-header {
   text-align: center;
   background-color: #282c34;
