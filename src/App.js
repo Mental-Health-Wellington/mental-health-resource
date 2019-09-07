@@ -7,7 +7,7 @@ import ResultsScreen from './ResultsScreen/ResultsScreen';
 import GetStarted from './GetStarted/GetStarted';
 
 const sexValues = [
-  "male", "female"
+  "Male", "Female"
 ]
 
 const ageValues = [

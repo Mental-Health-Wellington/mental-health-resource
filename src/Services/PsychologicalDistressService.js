@@ -1,10 +1,10 @@
 export class PsychologicalDistressService {
   getEstimateFor({group, sex}) {
-    return psychologicalData.find((datum) => datum.group === group)[sex]
+    return psychologicalData.find((datum) => datum.group === group)[sex.toLowerCase()]
   }
 
   getHazardousDrinkerEstimateFor({group, sex}) {
-    return alcoholData.find((datum) => datum.group === group)[sex]
+    return alcoholData.find((datum) => datum.group === group)[sex.toLowerCase()]
   }
 }
 
