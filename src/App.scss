@@ -24,6 +24,7 @@ h2 {
 .button {
   display: inline-block;
   @extend %button;
+  font-size: 1.2em;
 }
 
 button {

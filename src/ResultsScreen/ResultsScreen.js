@@ -40,11 +40,12 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection>
-        <p>So if you feel like you are at risk, or suffering from any of these, you are not alone.</p>
-        <p>We've put together some information if you'd like to either better look after yourself or your loved ones.</p>
-        <a className="button" href="#information-for-myself">Information to help myself</a>
-        <a className="button" href="#information-to-help-a-loved-one">Information to help a loved one</a>
-        <a className="button" href="#information-to-improve-the-system">Information on improving the mental health system</a>
+        <h2>What can I do?</h2>
+        <p>If you feel like you are at risk, or suffering from any of these, you are not alone.</p>
+        <p>We've put together some information if you'd like to look after yourself, your loved ones, or learning about the state of mental health in New Zealand.</p>
+        <a className="button" href="#information-for-myself">Information for myself</a>
+        <a className="button" href="#information-to-help-a-loved-one">Information to support a loved one</a>
+        <a className="button" href="#information-to-improve-the-system">Information on supporting mental health in New Zealand</a>
       </InformationSection>
 
       <InformationSection
@@ -66,7 +67,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection
-        header="To support the mental health system"
+        header="Supporting mental health in New Zealand"
         headerId="information-to-improve-the-system"
         >
           <p>Becoming a member, and getting involved with organisations such as <a href="https://www.balance.org.nz/">Balance NZ</a> is a great place to start. They support the community by using the views of people with mental health and addiction issues, so that they can advocate for their civil rights in national forums.</p>
