@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.scss';
 
+import { PsychologicalDistressService } from './services/PsychologicalDistressService'
+
 const sexValues = [
-  "Male", "Female"
+  "male", "female"
 ]
 
 const ageValues = [
@@ -12,6 +14,13 @@ const ageValues = [
 function App() {
   const [sex, setSex] = useState(null)
   const [age, setAge] = useState(null)
+  const [chanceOfDistress, setChanceOfDistress] = useState(null)
+
+  useEffect(() => {
+    if (!age || !sex) return
+    const service = new PsychologicalDistressService()
+    setChanceOfDistress(service.getEstimateFor({ group: age, sex }))
+  }, [age, sex])
 
   function currentPage() {
     if (!sex) {
@@ -33,7 +42,7 @@ function App() {
         </section>
       )
     } else {
-      return (<p>{sex} {age}</p>)
+      return (<p>{sex} {age} {chanceOfDistress}</p>)
     }
   }
 
