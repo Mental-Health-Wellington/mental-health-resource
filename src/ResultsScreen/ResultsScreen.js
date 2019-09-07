@@ -2,12 +2,13 @@ import React from 'react'
 
 import InformationSection from './InformationSection'
 
-export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking }) {
+export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides }) {
   return (
     <section>
       <InformationSection>
         <p>Did you know that {chanceOfDistress}% of people like you experience <a href="https://en.wikipedia.org/wiki/Mental_distress">Mental Distress</a>.</p>
         <p>{chanceOfHazardousDrinking}% are also battling with hazardous drinking.</p>
+        <p>There are also {suicides} suicides per 100,000 people</p>
         <p>These are scary statistics, but you are taking the first important step to reducing their impact.</p>
         <a className="button" href="#information-for-myself">Information to help myself</a>
         <a className="button" href="#information-to-help-a-loved-one">Information to help a loved one</a>

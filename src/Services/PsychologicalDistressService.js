@@ -6,6 +6,15 @@ export class PsychologicalDistressService {
   getHazardousDrinkerEstimateFor({group, sex}) {
     return alcoholData.find((datum) => datum.group === group)[sex.toLowerCase()]
   }
+
+  getSuicidesPer100000({ ethnicity, sex }) {
+    const ethnicitySearch = ethnicity === "Māori" ? "Māori" : "Non-Māori"
+    console.log(ethnicitySearch)
+    console.log(sex)
+    const rates = suicideRates.find((datum) => datum.ethnicity == ethnicitySearch && datum.sex == sex)
+    console.log(rates)
+    return rates.deaths_per_100000
+  }
 }
 
 const psychologicalData = [
@@ -287,35 +296,35 @@ const alcoholData = [
 
 const suicideRates = [
  {
-   "Year": 2015,
-   "Measure": "Age-standardised suicide rate",
-   "Sex": "Male",
-   "Age group": "Total",
-   "Ethnicity": "Māori",
+   "year": 2015,
+   "measure": "Age-standardised suicide rate",
+   "sex": "Male",
+   "age_group": "Total",
+   "ethnicity": "Māori",
    "deaths_per_100000": 25.3
  },
  {
-   "Year": 2015,
-   "Measure": "Age-standardised suicide rate",
-   "Sex": "Female",
-   "Age group": "Total",
-   "Ethnicity": "Māori",
+   "year": 2015,
+   "measure": "Age-standardised suicide rate",
+   "sex": "Female",
+   "age_group": "Total",
+   "ethnicity": "Māori",
    "deaths_per_100000": 11.5
  },
  {
-   "Year": 2015,
-   "Measure": "Age-standardised suicide rate",
-   "Sex": "Male",
-   "Age group": "Total",
-   "Ethnicity": "Non-Māori",
+   "year": 2015,
+   "measure": "Age-standardised suicide rate",
+   "sex": "Male",
+   "age_group": "Total",
+   "ethnicity": "Non-Māori",
    "deaths_per_100000": 14.7
  },
  {
-   "Year": 2015,
-   "Measure": "Age-standardised suicide rate",
-   "Sex": "Female",
-   "Age group": "Total",
-   "Ethnicity": "Non-Māori",
+   "year": 2015,
+   "measure": "Age-standardised suicide rate",
+   "sex": "Female",
+   "age_group": "Total",
+   "ethnicity": "Non-Māori",
    "deaths_per_100000": 4.7
  }
 ]
