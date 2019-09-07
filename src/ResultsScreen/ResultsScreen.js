@@ -36,26 +36,10 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         header="Information on how the system can be improved"
         headerId="information-to-improve-the-system"
         >
-          <p>For the current state of mental health in New Zealand, it's recommeneded to read through the <a href="https://mentalhealth.inquiry.govt.nz/assets/Summary-reports/He-Ara-Oranga.pdf">He Ara Oranga - Mental Health &amp; Addictions Inquiry Report</a></p>
-        <p>According to <a href="https://www.balance.org.nz/">Balance NZ</a>, there are 16 big issues that need more attention. These are:</p>
-        <ol>
-          <li>Ending forced treatment rather than just ‘minimising’ it.</li>
-          <li>Developing advocacy and better processes to ensure system accountability.</li>
-          <li>Ending the health-led system and moving towards cross-sector a community led funding and delivery.</li>
-          <li>Developing community-based replacements to acute inpatient services.</li>
-          <li>Defining and providing easy access to broad range of responses.</li>
-          <li>Giving priority to developing peer support.</li>
-          <li>Funding and equipping whanau and communities, not just services.</li>
-          <li>Honouring Te Tiriti o Waitangi with tangible actions to develop Maori for Maori solutions and equitable outcomes.</li>
-          <li>Developing and funding lived experience and whanau roles and a national lead agency.</li>
-          <li>Ensuring people who use services have decision-making power with the involvement of trusted whanau.</li>
-          <li>Focusing efforts on children and young people.</li>
-          <li>Preventing and responding to adverse childhood events (ACEs).</li>
-          <li>Stopping inequities and discrimination.</li>
-          <li>Creating a zero-suicide target.</li>
-          <li>Ensuring people with lived experience lead the Mental Health and Wellbeing Commission.</li>
-          <li>Developing a full co-production process for the transformation, not just co-design.</li>
-        </ol>
+          <p>Becoming a member, and getting involved with organisations such as <a href="https://www.balance.org.nz/">Balance NZ</a> is a great place to start. Through them, you can express the views of people with mental health and addiction issues and advocate for their civil rights in national forums.</p>
+
+          <p>The <a href="https://mentalhealth.inquiry.govt.nz/assets/Summary-reports/He-Ara-Oranga.pdf">He Ara Oranga - Mental Health &amp; Addictions Inquiry Report</a> is a great way to get a better understanding on the current state of our mental health system.</p>
+          <p><a href="https://www.balance.org.nz/">Balance NZ</a> have put together <a href="https://www.balance.org.nz/images/Home-WBC/Report_-_Lived_experience_and_whanau_response_to_MHA_inquiry_17_Feb_2019.pdf">a great report on additional areas they believe need more attention</a>.</p>
       </InformationSection>
     </section>
   )
