@@ -2,13 +2,28 @@ import React from 'react'
 
 import InformationSection from './InformationSection'
 
+const autoHeight = { minHeight: 'auto' }
+
 export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides, faceToFaceVisitsPercentage }) {
   return (
     <section>
-      <InformationSection>
-        <p>Did you know that {chanceOfDistress}% of people like you experience <a href="https://en.wikipedia.org/wiki/Mental_distress">Mental Distress</a>.</p>
-        <p>{chanceOfHazardousDrinking}% are also battling with hazardous drinking.</p>
-        <p>There are also {suicides} suicides per 100,000 people</p>
+      <InformationSection style={autoHeight}>
+        <h2>As a {ethnicity} {sex} in the {age} age bracket..</h2>
+      </InformationSection>
+      
+      <InformationSection style={autoHeight}>
+        <p>You are in a demographic where {chanceOfDistress}% experience <a href="https://en.wikipedia.org/wiki/Mental_distress">Mental Distress</a> per year.</p>
+      </InformationSection>
+
+      <InformationSection style={autoHeight}>
+        <p>{chanceOfHazardousDrinking}% are battling with hazardous drinking.</p>
+      </InformationSection>
+
+      <InformationSection style={autoHeight}>
+        <p>For every 100,000 people like you, {suicides} will take their own life.</p>
+      </InformationSection>
+
+      <InformationSection style={autoHeight}>
         <p>These are scary statistics, but you are taking the first important step to reducing their impact.</p>
         <a className="button" href="#information-for-myself">Information to help myself</a>
         <a className="button" href="#information-to-help-a-loved-one">Information to help a loved one</a>
