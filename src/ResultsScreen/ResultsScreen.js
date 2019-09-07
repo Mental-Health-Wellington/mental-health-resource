@@ -2,7 +2,7 @@ import React from 'react'
 
 import InformationSection from './InformationSection'
 
-export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress }) {
+export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking }) {
   return (
     <section>
       <InformationSection>

@@ -22,11 +22,13 @@ function App() {
   const [age, setAge] = useState(null)
   const [ethnicity, setEthnicity] = useState(null)
   const [chanceOfDistress, setChanceOfDistress] = useState(null)
+  const [chanceOfHazardousDrinking, setChanceOfHazardousDrinking] = useState(null)
 
   useEffect(() => {
     if (!ethnicity || !sex) return
     const service = new PsychologicalDistressService()
     setChanceOfDistress(service.getEstimateFor({ group: ethnicity, sex }))
+    setChanceOfHazardousDrinking(service.getHazardousDrinkerEstimateFor({ group: ethnicity, sex }))
   }, [ethnicity, sex])
 
   function currentPage() {
@@ -61,6 +63,7 @@ function App() {
           sex={sex}
           ethnicity={ethnicity}
           chanceOfDistress={chanceOfDistress}
+          chanceOfHazardousDrinking={chanceOfHazardousDrinking}
         />
       )
     }
