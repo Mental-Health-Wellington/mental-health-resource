@@ -2,15 +2,22 @@ import React from 'react'
 
 import InformationSection from './InformationSection'
 
+import HeadacheImage from '../imgs/headache.jpg'
+
 export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides, faceToFaceVisitsPercentage }) {
+  let suicidesImages = []
+  for(var i = 0; i < Math.ceil(suicides); i++) {
+    suicidesImages.push(i)
+  }
+
   return (
     <section>
       <InformationSection>
-        <h2>As a {ethnicity} {sex} in the {age} age bracket..</h2>
+        <h2>As a {age} {ethnicity} {sex}, you are in a demographic where..</h2>
       </InformationSection>
       
       <InformationSection>
-        <p>You are in a demographic where {chanceOfDistress}% experience <a href="https://en.wikipedia.org/wiki/Mental_distress">Mental Distress</a> per year.</p>
+        <p>{chanceOfDistress}% experience <a href="https://en.wikipedia.org/wiki/Mental_distress">mental distress</a>.</p>
       </InformationSection>
 
       <InformationSection>
@@ -18,11 +25,23 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection>
-        <p>For every 100,000 people like you, {suicides} will take their own life.</p>
+        <div style={ { width: '150px', float: 'right' } }>
+          {suicidesImages.map(() => 
+            <img key={i} height="28px" src={HeadacheImage} alt="person" />)}
+        </div>
+        <p>
+          For every 100,000 people like you, {suicides} will take their own life.
+        </p>
+        <div style={{clear: 'both'}} />
       </InformationSection>
 
       <InformationSection>
-        <p>These are scary statistics, but you are taking the first important step to reducing their impact.</p>
+        <p>{faceToFaceVisitsPercentage}% have been seen face-to-face with a mental health professional.</p>
+      </InformationSection>
+
+      <InformationSection>
+        <p>So if you feel like you are at risk, or suffering from any of these, you are not alone.</p>
+        <p>We've put together some information if you'd like to either better look after yourself or your loved ones.</p>
         <a className="button" href="#information-for-myself">Information to help myself</a>
         <a className="button" href="#information-to-help-a-loved-one">Information to help a loved one</a>
         <a className="button" href="#information-to-improve-the-system">Information on improving the mental health system</a>
@@ -32,7 +51,6 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         header="To help yourself"
         headerId="information-for-myself"
         >
-        <p>Congratulations, you are one of {faceToFaceVisitsPercentage}% people in your demographic who are seeking help.</p>
         <p>If you are feel that you are in immediate danger to yourself or others, then <a href="https://www.mentalhealth.org.nz/get-help/in-crisis">find help right away by calling 111, going to your nearest hospital, or calling your local crisis line</a>.</p>
         <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, </p>
         <p><a href="https://1737.org.nz/">1737</a> is a free counseling service which you can call or text. It's available 24/7, so is a fantastic resource if you were looking to talk through a difficult situation shortly after it's happened.</p>
