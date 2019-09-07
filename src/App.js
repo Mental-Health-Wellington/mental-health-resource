@@ -44,7 +44,7 @@ function App() {
     else if (!sex) {
       return (
         <InputScreen
-          question="What is your sex?"
+          question="I am ____"
           values={sexValues}
           onClick={setSex}
           />
@@ -52,7 +52,7 @@ function App() {
     } else if (!ethnicity) {
       return (
         <InputScreen
-          question="What is your ethnicity?"
+          question="I am ____"
           values={ethnicityValues}
           onClick={setEthnicity}
           />
@@ -60,7 +60,7 @@ function App() {
     } else if (!age) {
       return (
         <InputScreen
-          question="How old are you?"
+          question="I am ____ years old"
           values={ageValues}
           onClick={setAge}
           />
