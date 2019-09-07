@@ -6,7 +6,7 @@ h2 {
   font-size: 3em;
 }
 
-button {
+%button {
   background-color: #F0F3F4;
   color: #334856;
   font-size: 1.5em;
@@ -15,11 +15,20 @@ button {
   border-radius: 50px;
   margin-bottom: 0.75em;
   cursor: pointer;
-  width: 250px;
   
   &:hover {
     text-decoration: underline;
   }
+}
+
+.button {
+  display: inline-block;
+  @extend %button;
+}
+
+button {
+  @extend %button;
+  width: 250px;
 }
 
 .App-header {

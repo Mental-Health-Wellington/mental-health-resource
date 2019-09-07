@@ -1,7 +1,11 @@
 .information-section {
+  background-color: #ECEFF0;
+  color: #1B1C20;
   min-height: 100vh;
   max-width: 800px;
   border-top: 1px solid black;
-  padding: 1em;
-  margin: 0 auto;
+  padding: 0.5em 1em;
+  margin: 3em auto;
+  border-radius: 30px;
+  box-shadow: 1px 1px 2px 2px #1B1C20;
 }
