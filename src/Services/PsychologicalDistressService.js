@@ -1,6 +1,6 @@
 export class PsychologicalDistressService {
   getEstimateFor({group, sex}) {
-    return data.find((datum) => datum.group == group)[sex]
+    return data.find((datum) => datum.group === group)[sex]
   }
 }
 

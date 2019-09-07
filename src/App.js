@@ -1,45 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import './App.scss';
 
-import { PsychologicalDistressService } from './services/PsychologicalDistressService'
+import { PsychologicalDistressService } from './Services/PsychologicalDistressService'
+import InputScreen from './InputScreen/InputScreen'
 
 const sexValues = [
   "male", "female"
 ]
 
 const ageValues = [
-  "15–24", "25-34", "35-44"
+  "15–24", "25-34", "35-44", "45-54", "55-64", "65-74", "74+"
+]
+
+const ethnicityValues = [
+  "Maori", "Pacific", "Asian", "European/Other"
 ]
 
 function App() {
   const [sex, setSex] = useState(null)
   const [age, setAge] = useState(null)
+  const [ethnicity, setEthnicity] = useState(null)
   const [chanceOfDistress, setChanceOfDistress] = useState(null)
 
   useEffect(() => {
-    if (!age || !sex) return
+    if (!ethnicity || !sex) return
     const service = new PsychologicalDistressService()
-    setChanceOfDistress(service.getEstimateFor({ group: age, sex }))
-  }, [age, sex])
+    setChanceOfDistress(service.getEstimateFor({ group: ethnicity, sex }))
+  }, [ethnicity, sex])
 
   function currentPage() {
     if (!sex) {
       return (
-        <section>
-          <h2>Are you a</h2>
-          {sexValues.map((sex) => 
-            <button onClick={() => setSex(sex)}>{sex}</button>
-          )}
-        </section>
+        <InputScreen
+          question="What is your sex?"
+          values={sexValues}
+          onClick={setSex}
+          />
+      )
+    } else if (!ethnicity) {
+      return (
+        <InputScreen
+          question="What is your ethnicity?"
+          values={ethnicityValues}
+          onClick={setEthnicity}
+          />
       )
     } else if (!age) {
       return (
-        <section>
-          <h2>How old are you?</h2>
-          {ageValues.map((age) => 
-            <button onClick={() => setAge(age)}>{age}</button>
-          )}
-        </section>
+        <InputScreen
+          question="How old are you?"
+          values={ageValues}
+          onClick={setAge}
+          />
       )
     } else {
       return (<p>{sex} {age} {chanceOfDistress}</p>)
