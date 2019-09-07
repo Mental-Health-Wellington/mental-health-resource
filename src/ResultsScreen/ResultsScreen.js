@@ -2,7 +2,7 @@ import React from 'react'
 
 import InformationSection from './InformationSection'
 
-export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides }) {
+export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides, faceToFaceVisitsPercentage }) {
   return (
     <section>
       <InformationSection>
@@ -19,7 +19,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         header="Information for myself"
         headerId="information-for-myself"
         >
-          <p>Congratulations, you are one of X% people who are seeking help.</p>
+          <p>Congratulations, you are one of {faceToFaceVisitsPercentage}% people in your demographic who are seeking help.</p>
           <p>If you are feel that you are in immediate danger to yourself or others, then <a href="https://www.mentalhealth.org.nz/get-help/in-crisis">find help right away by calling 111, going to your nearest hospital, or calling your local crisis line</a>.</p>
           <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, </p>
           <p><a href="https://1737.org.nz/">1737</a> is a free councelling service which you can call or text. It's available 24/7, so is a fantastic resource if you were looking to talk through a difficult situation sortly after it's happened.</p>

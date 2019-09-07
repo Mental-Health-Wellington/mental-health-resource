@@ -11,7 +11,7 @@ const sexValues = [
 ]
 
 const ageValues = [
-  "15–24", "25-34", "35-44", "45-54", "55-64", "65-74", "75+"
+  "15-24", "25-34", "35-44", "45-54", "55-64", "65-74", "75+"
 ]
 
 const ethnicityValues = [
@@ -25,15 +25,17 @@ function App() {
   const [chanceOfDistress, setChanceOfDistress] = useState(null)
   const [chanceOfHazardousDrinking, setChanceOfHazardousDrinking] = useState(null)
   const [suicides, setSuicides] = useState(null)
+  const [faceToFaceVisitsPercentage, setFaceToFaceVisitsPercentage] = useState(null)
   const [getStarted, setGetStarted] = useState(false)
 
   useEffect(() => {
-    if (!ethnicity || !sex) return
+    if (!ethnicity || !sex || !age) return
     const service = new PsychologicalDistressService()
     setChanceOfDistress(service.getEstimateFor({ group: ethnicity, sex }))
     setChanceOfHazardousDrinking(service.getHazardousDrinkerEstimateFor({ group: ethnicity, sex }))
     setSuicides(service.getSuicidesPer100000({ ethnicity, sex }))
-  }, [ethnicity, sex])
+    setFaceToFaceVisitsPercentage(service.getFaceToFaceVisitPercentage({ ethnicity, sex, age }))
+  }, [age, ethnicity, sex])
 
   function currentPage() {
     if (!getStarted) {
@@ -75,6 +77,7 @@ function App() {
           ethnicity={ethnicity}
           chanceOfDistress={chanceOfDistress}
           chanceOfHazardousDrinking={chanceOfHazardousDrinking}
+          faceToFaceVisitsPercentage={faceToFaceVisitsPercentage}
           suicides={suicides}
         />
       )

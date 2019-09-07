@@ -13,11 +13,13 @@ export class PsychologicalDistressService {
   }
 
   getFaceToFaceVisitPercentage({ ethnicity, sex, age }) {
-    return faceToFaceVisits.find((datum) => {
+    const ageSearch = age !== "75+" ? age.split("-")[1] : age
+    const visits = faceToFaceVisits.find((datum) => {
       return datum.sex === sex &&
-        datum.age_group === age &&
+        datum.age_group.includes(ageSearch) &&
         datum.ethnicity === ethnicity
-    }).percentage
+    }).percentage * 100
+    return visits.toFixed(2)
   }
 }
 
