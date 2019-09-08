@@ -3,6 +3,8 @@ import React from 'react'
 import InformationSection from './InformationSection'
 
 import HeadacheImage from '../imgs/headache.jpg'
+import SubstanceImage from '../imgs/substance.jpg'
+import FaceToFaceImage from '../imgs/face2face.jpg'
 
 function FindOutMore() {
   return (
@@ -27,7 +29,11 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection>
+        <div style={ { float: 'right' } }>
+          <img height="80px" src={SubstanceImage} alt="person" />
+        </div>
         <p><strong>{chanceOfHazardousDrinking}%</strong> are battling with hazardous drinking, which many people have identified as a serious public health issue. <FindOutMore /></p>
+        <div style={{clear: 'both'}} />
       </InformationSection>
 
       <InformationSection>
@@ -42,7 +48,11 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection>
+        <div style={ { width: '150px', float: 'right' } }>
+          <img height="80px" src={FaceToFaceImage} alt="person" />
+        </div>
         <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health, or addiction professional (in 2016). <FindOutMore /></p>
+        <div style={{clear: 'both'}} />
       </InformationSection>
 
       <InformationSection>
