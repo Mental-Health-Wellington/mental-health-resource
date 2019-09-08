@@ -80,12 +80,13 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         header="Where did these stats come from?"
         headerId="information-sources"
         >
-        <p>Our sources for this tool have been primarily from the <a href="">New Zealand Mental Health Foundation</a> </p>
+        <p>Our sources for this tool have been primarily from the <a href="https://www.health.govt.nz/">New Zealand Ministry of Health</a>.</p>
         <ul>
           <li><a href="https://minhealthnz.shinyapps.io/nz-health-survey-2016-17-tier-1/">New Zealand Health Survey</a> is where we sourced our information on mental distress, and hazardous drinking. If you are looking to dive deeper into this stats then I recommend checking it out.</li>
           <li><a href="https://mentalhealth.inquiry.govt.nz/assets/Summary-reports/He-Ara-Oranga.pdf">Mental Health &amp; Addictions Inquiry Report</a> was our source on mental distress over a lifetime.</li>
           <li><a href="https://www.health.govt.nz/publication/suicide-facts-2015-data">Ministry of Health, Suicide Facts 2015</a> is where we sourced information on suicides.</li>
           <li><a href="https://www.health.govt.nz/publication/mental-health-and-addiction-service-use-2015-16">Ministry of Health, Mental Health and Addiction Service Use 2015/16</a> is where we sourced our information on face-to-face interactions with mental health or addiction specialists.</li>
+          <li><a href="https://figure.nz/">Figure NZ</a> is a great resource if you want to find other information like this in beautiful graph form.</li>
         </ul>
       </InformationSection>
     </section>
