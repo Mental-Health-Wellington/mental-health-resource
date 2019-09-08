@@ -4,6 +4,12 @@ import InformationSection from './InformationSection'
 
 import HeadacheImage from '../imgs/headache.jpg'
 
+function FindOutMore() {
+  return (
+    <a className="link-star" title="Find out more" href="#information-sources">*</a>
+  )
+}
+
 export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, chanceOfHazardousDrinking, suicides, faceToFaceVisitsPercentage }) {
   let suicidesImages = []
   for(var i = 0; i < Math.ceil(suicides); i++) {
@@ -17,11 +23,11 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
       
       <InformationSection>
-        <p><strong>{chanceOfDistress}%</strong> experience <a href="https://en.wikipedia.org/wiki/Mental_distress">mental distress</a> every year. Any one of us can be affected: over 50–80% of New Zealanders will experience mental distress or addiction challenges or both in their lifetime</p>
+        <p><strong>{chanceOfDistress}%</strong> experience <a href="https://en.wikipedia.org/wiki/Mental_distress">mental distress</a> every year. Any one of us can be affected: over 50–80% of New Zealanders will experience mental distress or addiction challenges or both in their lifetime. <FindOutMore /></p>
       </InformationSection>
 
       <InformationSection>
-        <p><strong>{chanceOfHazardousDrinking}%</strong> are battling with hazardous drinking, which many people have identified as a serious public health issue.</p>
+        <p><strong>{chanceOfHazardousDrinking}%</strong> are battling with hazardous drinking, which many people have identified as a serious public health issue. <FindOutMore /></p>
       </InformationSection>
 
       <InformationSection>
@@ -30,13 +36,13 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
             <img key={i} height="28px" src={HeadacheImage} alt="person" />)}
         </div>
         <p>
-          For every 100,000 people like you, <strong>{suicides}</strong> will take their own life each year.
+          For every 100,000 people like you, <strong>{suicides}</strong> will take their own life each year. <FindOutMore />
         </p>
         <div style={{clear: 'both'}} />
       </InformationSection>
 
       <InformationSection>
-        <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health, or addiction professional (in 2016).</p>
+        <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health, or addiction professional (in 2016). <FindOutMore /></p>
       </InformationSection>
 
       <InformationSection>
@@ -88,6 +94,11 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
           <li><a href="https://www.health.govt.nz/publication/mental-health-and-addiction-service-use-2015-16">Ministry of Health, Mental Health and Addiction Service Use 2015/16</a> is where we sourced our information on face-to-face interactions with mental health or addiction specialists.</li>
           <li><a href="https://figure.nz/">Figure NZ</a> is a great resource if you want to find other information like this in beautiful graph form.</li>
         </ul>
+
+        <h3>Information we couldn't find</h3>
+        <p>When we originally started this project, there were notable gaps stopping us from being able cover as many topics as we'd like.</p>
+        <p>We would have liked for data sets to integrate information on transgender or non-binary individuals. Especially as <a href="https://www.nzma.org.nz/journal/read-the-journal/all-issues/2010-2019/2018/vol-131-no-1468-19-january-2018/7463">there is a growing number people who identify as transgender in New Zealand</a>.</p>
+        <p>There was also a gap in location based mental health data. If we had this, we could have tried to see if there were areas in New Zealand which are more effected by mental health issues.</p>
       </InformationSection>
     </section>
   )
