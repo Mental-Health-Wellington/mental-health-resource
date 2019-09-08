@@ -28,6 +28,16 @@ function App() {
   const [faceToFaceVisitsPercentage, setFaceToFaceVisitsPercentage] = useState(null)
   const [getStarted, setGetStarted] = useState(false)
 
+  function reset() {
+    setAge(null)
+    setSex(null)
+    setEthnicity(null)
+    setChanceOfDistress(null)
+    setChanceOfHazardousDrinking(null)
+    setSuicides(null)
+    setFaceToFaceVisitsPercentage(null)
+  }
+
   useEffect(() => {
     if (!ethnicity || !sex || !age) return
     const service = new PsychologicalDistressService()
@@ -87,7 +97,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Mental Health Journey</h1>
+        <h1 style={ { cursor: 'pointer'} }  onClick={() => reset()}>Mental Health Journey</h1>
       </header>
       <div className="body">
         {currentPage()}
