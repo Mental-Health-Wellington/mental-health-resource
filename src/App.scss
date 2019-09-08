@@ -25,6 +25,11 @@ h2 {
   display: inline-block;
   @extend %button;
   font-size: 1.2em;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 button {

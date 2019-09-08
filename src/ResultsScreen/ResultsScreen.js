@@ -36,7 +36,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
       </InformationSection>
 
       <InformationSection>
-        <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health professional (in 2016).</p>
+        <p>And only <strong>{faceToFaceVisitsPercentage}%</strong> have been seen face-to-face with a mental health, or addiction professional (in 2016).</p>
       </InformationSection>
 
       <InformationSection>
@@ -53,7 +53,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         headerId="information-for-myself"
         >
         <p>If you are feel that you are in immediate danger to yourself or others, then <a href="https://www.mentalhealth.org.nz/get-help/in-crisis">find help right away by calling 111, going to your nearest hospital, or calling your local crisis line</a>.</p>
-        <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, </p>
+        <p>Support groups are great for finding people who are going through similar issues as yourself. Some examples are <a href="https://www.balance.org.nz/support/online-support-groups">Balance NZ's Online Support Groups</a>, <a href="https://www.mentalhealth.org.nz/get-help/in-crisis/support-groups/">a comprehensive list can also be found on the Mental Health Foundation's website</a>.</p>
         <p><a href="https://1737.org.nz/">1737</a> is a free counseling service which you can call or text. It's available 24/7, so is a fantastic resource if you were looking to talk through a difficult situation shortly after it's happened.</p>
       </InformationSection>
 
