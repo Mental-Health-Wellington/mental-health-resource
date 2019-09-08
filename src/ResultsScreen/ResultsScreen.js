@@ -108,6 +108,7 @@ export default function ResultsScreen({ age, ethnicity, sex, chanceOfDistress, c
         <h3>Information we couldn't find</h3>
         <p>When we originally started this project, there were notable gaps stopping us from being able cover as many topics as we'd like.</p>
         <p>We would have liked for data sets to integrate information on transgender or non-binary individuals. Especially as <a href="https://www.nzma.org.nz/journal/read-the-journal/all-issues/2010-2019/2018/vol-131-no-1468-19-january-2018/7463">there is a growing number people who identify as transgender in New Zealand</a>.</p>
+        <p>A data set on the relationship between employment and mental health would have also been great to help us narrow further into a demographic.</p>
         <p>There was also a gap in location based mental health data. If we had this, we could have tried to see if there were areas in New Zealand which are more effected by mental health issues.</p>
       </InformationSection>
     </section>
